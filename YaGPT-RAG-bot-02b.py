@@ -278,7 +278,7 @@ def main():
 
         if 'generated' not in st.session_state:
             st.session_state['generated'] = [
-                "Что бы вы хотели узнать о документе?"]
+                "Что бы вы хотели узнать?"]
 
         if 'past' not in st.session_state:
             st.session_state['past'] = ["Привет!"]
