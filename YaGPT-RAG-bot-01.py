@@ -181,7 +181,7 @@ def main():
     # Параметры chunk_size и chunk_overlap
     global chunk_size, chunk_overlap
     chunk_size = st.sidebar.slider("Выберите размер текстового 'окна' разметки документов в символах", 0, 4000, 1000)
-    chunk_overlap = st.sidebar.slider("Выберите размер блока перекрытия в символах", 0, 100, 100)
+    chunk_overlap = st.sidebar.slider("Выберите размер блока перекрытия в символах", 0, 1000, 100)
 
     # Выводим предупреждение, если пользователь не указал свои учетные данные
     if not yagpt_api_key or not yagpt_folder_id or not mdb_os_pwd or not mdb_os_hosts or not mdb_os_index_name or not mdb_prefix:
