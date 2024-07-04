@@ -48,7 +48,7 @@ def ingest_docs(temp_dir: str = tempfile.gettempdir()):
         loader = DirectoryLoader(
             temp_dir, glob="**/*.pdf", loader_cls=PyPDFLoader, recursive=True
         )
-        documents = loader.load()
+        documents = loader.load() 
 
         # разбиваем документы на блоки
         text_splitter = RecursiveCharacterTextSplitter(

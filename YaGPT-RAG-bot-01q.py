@@ -240,7 +240,8 @@ def main():
             model_uri = "gpt://"+str(yagpt_folder_id)+"/yandexgpt-lite/latest"
         else:
             model_uri = "gpt://"+str(yagpt_folder_id)+"/yandexgpt/latest"  
-        # обращение к модели YaGPT
+        # обращение к модели YaGPT 
+        
         llm = ChatYandexGPT(api_key=yagpt_api_key, model_uri=model_uri, temperature = yagpt_temp, max_tokens=8000)
         # model = YandexLLM(api_key = yagpt_api_key, folder_id = yagpt_folder_id, temperature = 0.6, max_tokens=8000, use_lite = False)
         # llm = YandexLLM(api_key=yagpt_api_key, folder_id=yagpt_folder_id, temperature = yagpt_temp, max_tokens=7000)
